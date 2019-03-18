@@ -11,7 +11,7 @@ class Custom<T> {
     }
 }
 
-public class Generics1 {
+public class SimpleGenerics {
     public static void main(String[] args) {
         Custom<Integer> intC = new Custom<Integer>(Integer.MAX_VALUE);
         System.out.println(intC.get());
