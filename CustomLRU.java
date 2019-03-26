@@ -29,6 +29,7 @@ class DLL<K,V> {
     }
 
     public void remove(Node<K,V> node) {
+        if(size == 0) return; 
         if(head == node && tail == node) { // Case with just one node.
             head = tail = null;
         } else if(node == head) {
