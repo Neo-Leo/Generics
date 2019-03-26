@@ -13,16 +13,16 @@ class Custom<T> {
 
 public class SimpleGenerics {
     public static void main(String[] args) {
-        Custom<Integer> intC = new Custom<Integer>(Integer.MAX_VALUE);
+        Custom<Integer> intC = new Custom<>(Integer.MAX_VALUE);
         System.out.println(intC.get());
 
-        Custom<Long> longC = new Custom<Long>(Long.MAX_VALUE);
+        Custom<Long> longC = new Custom<>(Long.MAX_VALUE);
         System.out.println(longC.get());
 
-        Custom<Double> doubleC = new Custom<Double>(Double.MAX_VALUE);
+        Custom<Double> doubleC = new Custom<>(Double.MAX_VALUE);
         System.out.println(doubleC.get());
 
-        Custom<String> stringC = new Custom<String>("Test");
+        Custom<String> stringC = new Custom<>("Test");
         System.out.println(stringC.get());
     }
 }
